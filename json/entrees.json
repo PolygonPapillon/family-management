@@ -1,134 +1,163 @@
 {
-
-    "Bacon and Eggs": {
-      "qntyAvailable": "0",
-      "ingredents": ["bacon", "eggs", "potatoes", "butter and/or bacon grease"]
+  "Bacon and Eggs": {
+    "qntyAvailable": "0",
+    "ingredents": {
+      "bacon": "",
+      "eggs": "",
+      "potatoes": "",
+      "butter and/or bacon grease": ""
     },
-    "PB&J": {
-      "qntyAvailable": "",
-            "ingredents": ["peanut butter", "jelly or jam", "bread"]
+    "directions": ""
+  },
+  "PB&J": {
+    "qntyAvailable": "",
+    "ingredents": {
+      "peanut butter": "2T",
+      "jelly or jam": "2T",
+      "bread": "2 slices"
     },
-    "Stewed Tomato Soup": {
-      "qntyAvailable": "18",
-      "ingredents": ["jar of stewed tomatoes"]
+    "directions": ""
+  },
+  "Stewed Tomato Soup": {
+    "qntyAvailable": "18",
+    "ingredents": { "stewed tomatoes": "1 jar" },
+    "directions": ""
+  },
+  "Funeral Potatoes": {
+    "qntyAvailable": "1",
+    "ingredents": {
+      "mix": "1 bag",
+      "maybe something else": ""
     },
-    "Funeral Potatoes": {
-      "qntyAvailable": "1",
-      "ingredents": ["bag of mix", "maybe something else"]
+    "directions": ""
+  },
+  "Crab Salad": {
+    "qntyAvailable": "3",
+    "ingredents": {
+      "fake crab": "",
+      "crackers": "",
+      "mayo": "",
+      "dill": "",
+      "garlic powder": "",
+      "salt": "",
+      "pepper": ""
     },
-    "Crab Salad": {
-      "qntyAvailable": "3",
-      "ingredents": [
-        "fake crab",
-        "crackers",
-        "mayo",
-        "dill",
-        "garlic powder",
-        "salt",
-        "pepper"
-      ]
+    "directions": ""
+  },
+  "Baked Fish": {
+    "qntyAvailable": "6",
+    "ingredents": {
+      "salmon fillet": "",
+      "dill": "",
+      "mayo": "",
+      "garlic powder": "",
+      "onion powder": "",
+      "salt": "",
+      "parmesan cheese": ""
     },
-    "Baked Fish": {
-      "qntyAvailable": "6",
-      "ingredents": [
-        "salmon fillet",
-        "dill",
-        "mayo",
-        "garlic powder",
-        "onion powder",
-        "salt",
-        "parmesan cheese"
-      ]
+    "directions": ""
+  },
+  "Steak": {
+    "qntyAvailable": "4",
+    "ingredents": {
+      "steak": "",
+      "garlic powder": "",
+      "onion powder": "",
+      "salt": "",
+      "butter": "",
+      "smoked paprika": ""
     },
-    "Steak": {
-      "qntyAvailable": "4",
-      "ingredents": [
-        "steak",
-        "garlic powder",
-        "onion powder",
-        "salt",
-        "butter",
-        "smoked paprika"
-      ]
+    "directions": ""
+  },
+  "Baked Chicken Thigh": {
+    "qntyAvailable": "2",
+    "ingredents": {
+      "chicken thigh - skin on, bone in": "",
+      "garlic powder": "",
+      "onion powder": "",
+      "salt": "",
+      "butter": ""
     },
-    "Baked Chicken Thigh": {
-      "qntyAvailable": "2",
-      "ingredents": [
-        "chicken thigh - skin on, bone in",
-        "garlic powder",
-        "onion powder",
-        "salt",
-        "butter"
-      ]
+    "directions": ""
+  },
+  "Rice-a-roni": {
+    "qntyAvailable": "2",
+    "ingredents": {
+      "Roni": "box",
+      "butter": "",
+      "sometimes milk": ""
     },
-    "Rice-a-roni": {
-      "qntyAvailable": "2",
-      "ingredents": ["box of mix", "butter", "sometimes milk"]
+    "directions": ""
+  },
+  "Red Lobster biscuits": {
+    "qntyAvailable": "2",
+    "ingredents": {
+      "biscuit mix": "1 bag",
+      "topping mix": "1 packet",
+      "butter": "",
+      "milk": ""
     },
-    "Red Lobster biscuits": {
-      "qntyAvailable": "2",
-      "ingredents": [
-        "box of biscuit mix",
-        "bag of topping mix",
-        "butter",
-        "milk"
-      ]
+    "directions": ""
+  },
+  "Cafe Rio tortillas": {
+    "qntyAvailable": "4",
+    "ingredents": {
+      "tortillas": "",
+      "refried beans": "can",
+      "shredded cheddar": "2+ handfuls",
+      "spice blend": "sprinkle",
+      "non-stick cooking spray": ""
     },
-    "Cafe Rio tortillas": {
-      "qntyAvailable": "4",
-      "ingredents": [
-        "tortillas",
-        "refried beans",
-        "shredded cheddar",
-        "spice blend",
-        "non-stick cooking spray"
-      ]
+    "directions": ""
+  },
+  "Japanese fried rice": {
+    "qntyAvailable": "",
+    "ingredents": {
+      "leftover rice": "",
+      "eggs": "",
+      "carrots": "",
+      "onion": "",
+      "garlic clove(s)": "",
+      "miso": "",
+      "sesame oil": ""
     },
-    "Japanese fried rice": {
-      "qntyAvailable": "",
-      "ingredents": [
-        "leftover rice",
-        "eggs",
-        "carrots",
-        "onion",
-        "garlic clove(s)",
-        "miso",
-        "sesame oil"
-      ]
+    "directions": ""
+  },
+  "fruity drink": {
+    "qntyAvailable": "",
+    "ingredents": {
+      "leftover baby foods": "",
+      "milk, yogurt, or cream": "",
+      "fruirs": "",
+      "veggies": "",
+      "protein powder": "",
+      "peanut butter": "",
+      "honey": "",
+      "oatmeal and/or barley": ""
     },
-    "fruity drink": {
-      "qntyAvailable": "",
-      "ingredents": [
-        "leftover baby foods",
-        "milk, yogurt, or cream",
-        "fruirs",
-        "veggies",
-        "protein powder",
-        "peanut butter",
-        "honey",
-        "oatmeal and/or barley"
-      ]
+    "directions": ""
+  },
+  "Vitamix cheesy potato soup": {
+    "qntyAvailable": "",
+    "ingredents": {
+      "bacon bits": "",
+      "shredded cheddar": "",
+      "potatoes": "",
+      "milk or cream": "",
+      "dried onion bits": "handful"
     },
-    "Vitamix cheesy potato soup": {
-      "qntyAvailable": "",
-      "ingredents": [
-        "bacon bits",
-        "shredded cheddar",
-        "potatoes",
-        "milk or cream",
-        "dried onion bits"
-      ]
+    "directions": ""
+  },
+  "Vitamix cheesy broccoli cauliflower soup": {
+    "qntyAvailable": "",
+    "ingredents": {
+      "bacon bits": "",
+      "shredded cheddar": "",
+      "cauliflower": "",
+      "broccoli": "",
+      "milk or cream": "",
+      "dried onion bits": "handful"
     },
-    "Vitamix cheesy broccoli cauliflower soup": {
-      "qntyAvailable": "",
-      "ingredents": [
-        "bacon bits",
-        "shredded cheddar",
-        "cauliflower",
-        "broccoli",
-        "milk or cream",
-        "dried onion bits"
-      ]
-    }
-
+    "directions": ""
+  }
 }
