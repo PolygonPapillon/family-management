@@ -1,10 +1,9 @@
-let requestURL =
-  "https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/pokedex.json";
+let requestURL = "https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/pokedex.json";
 let request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = "json";
 request.send();
-request.onload = function() {
+request.onload = function () {
   let pokedata = request.response;
   //console.log(pokedata);
 
@@ -20,32 +19,31 @@ function populateDOM(allPokemon) {
   }
 }
 
-  function makeCard(pokemon, iCount) {
-    let pokeScene = document.createElement("section");
-    let pokeCard = document.createElement("article");
-    let pokeFront = document.createElement("div");
-    let pokeBack = document.createElement("div");
+function makeCard(pokemon, iCount) {
+  let pokeScene = document.createElement("section");
+  let pokeCard = document.createElement("article");
+  let pokeFront = document.createElement("div");
+  let pokeBack = document.createElement("div");
 
-    pokeScene.setAttribute("class", "scene");
-    pokeCard.setAttribute("class", "card");
-    pokeFront.setAttribute("class", "card__face card__face--front");
-    pokeBack.setAttribute("class", "card__face card__face--back");
+  pokeScene.setAttribute("class", "scene");
+  pokeCard.setAttribute("class", "card");
+  pokeFront.setAttribute("class", "card__face card__face--front");
+  pokeBack.setAttribute("class", "card__face card__face--back");
 
-    makeCardFront(pokeFront, pokemon, iCount);
-    makeCardBack(pokeBack, pokemon, iCount);
+  makeCardFront(pokeFront, pokemon, iCount);
+  makeCardBack(pokeBack, pokemon, iCount);
 
-    pokeCard.appendChild(pokeFront);
-    pokeCard.appendChild(pokeBack);
+  pokeCard.appendChild(pokeFront);
+  pokeCard.appendChild(pokeBack);
 
-    pokeScene.appendChild(pokeCard);
+  pokeScene.appendChild(pokeCard);
 
-    cardArea.appendChild(pokeScene);
+  cardArea.appendChild(pokeScene);
 
-    pokeCard.addEventListener("click", function() {
-      pokeCard.classList.toggle("is-flipped");
-    });
-  }
-
+  pokeCard.addEventListener("click", function () {
+    pokeCard.classList.toggle("is-flipped");
+  });
+}
 
 function makeCardFront(pokeFront, aPokemon, arrayCount) {
   let pokePic = document.createElement("img");
@@ -55,8 +53,7 @@ function makeCardFront(pokeFront, aPokemon, arrayCount) {
   pokePic.setAttribute("class", "bigPic");
 
   pokeName.textContent = aPokemon[arrayCount].name.english;
-  pokeHP.textContent =
-    "HP for this Pokemon is: " + aPokemon[arrayCount].base.HP;
+  pokeHP.textContent = "HP for this Pokemon is: " + aPokemon[arrayCount].base.HP;
 
   let pokeNum = getPokePic(aPokemon[arrayCount].id);
 
@@ -93,8 +90,7 @@ function makeCardBack(pokeBack, aPokemon, arrayCount) {
 
   otherNames.textContent = aPokemon[arrayCount].name.english + "'s name in";
   frenchName.textContent = "French is:     " + aPokemon[arrayCount].name.french;
-  japaneseName.textContent =
-    "Japanese is:     " + aPokemon[arrayCount].name.japanese;
+  japaneseName.textContent = "Japanese is:     " + aPokemon[arrayCount].name.japanese;
 
   pokeBack.appendChild(otherNames);
   pokeBack.appendChild(frenchName);
@@ -114,25 +110,20 @@ function getPokePic(pokeID) {
 }
 
 document.querySelector(".anotha").addEventListener("click", () => {
-  const aPokeNumber = Number(
-    window.prompt(
-      "Type the number of a Pokemon you wish to see on a card (1-809)",
-      ""
-    )
-  );
+  const aPokeNumber = Number(window.prompt("Type the number of a Pokemon you wish to see on a card (1-809)", ""));
   if (aPokeNumber < 0 || aPokeNumber > 809) {
     alert("That Pokemon does not exist. Please enter a different one.");
-    return
+    return;
   } else {
-  let requestURL =
-    "https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/pokedex.json";
-  let request = new XMLHttpRequest();
-  request.open("GET", requestURL);
-  request.responseType = "json";
-  request.send();
-  request.onload = function() {
-    let pokedata = request.response;
-    let arrayCount = aPokeNumber - 1;
-    makeCard(pokedata, arrayCount);
-  };}
+    let requestURL = "https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/pokedex.json";
+    let request = new XMLHttpRequest();
+    request.open("GET", requestURL);
+    request.responseType = "json";
+    request.send();
+    request.onload = function () {
+      let pokedata = request.response;
+      let arrayCount = aPokeNumber - 1;
+      makeCard(pokedata, arrayCount);
+    };
+  }
 });

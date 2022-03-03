@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  background-image: url(/images/sayagata-400px-pattern.png);
+}
+header,
+nav,
+main,
+footer {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+div#wrapper {
+  max-width: 75rem;
+  margin: 0 auto;
+  box-shadow: 0 0 10px #000;
+  //background-color: #fff;
+}
+
+header {
+  padding: $gutter 0 0 0;
+}
+
+//nav {} // end nav
+
+main {
+  section.theSections {
+    max-width: 75rem;
+  }
+  section.subSections {
+    justify-content: center;
+    figure {
+      width: 70%;
+    }
+    figure.enSmallen {
+      height: 60%;
+    }
+  }
+} // end main

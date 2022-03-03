@@ -1,0 +1,124 @@
+body {
+  font-family: $font;
+  font-weight: $fontReg;
+}
+
+div#wrapper {
+  background-color: $backgroundColor;
+}
+header {
+  background: url(../images/header_2x.jpg) no-repeat center;
+  min-height: 150px;
+  border-bottom: 5px solid $secondaryColor;
+  h1 {
+    font-size: 3.3rem;
+    text-align: center;
+    padding-top: 55px;
+    color: $fontColor;
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: $fontColor;
+    padding-left: 108px;
+    padding-bottom: 20px;
+  }
+}
+nav {
+  p {
+    padding: 8px $gutter;
+    color: $fontColor;
+  }
+  a {
+    color: $primaryColor;
+    text-decoration: none;
+    font-weight: $fontLight;
+  }
+}
+main {
+  color: $fontColor;
+  a {
+    text-decoration: none;
+    color: $primaryColor;
+  }
+  h1 {
+    font-size: 2rem;
+    padding: $gutter;
+  }
+  p {
+    text-align: center;
+    padding: 8px $gutter;
+  }
+  border-bottom: none;
+
+  section.theSections {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding-bottom: $gutter;
+    div.area {
+      padding: $gutter;
+      text-align: center;
+      figure {
+        img {
+          width: 100%;
+          max-height: 140px;
+          max-width: 140px;
+        }
+        figcaption {
+          width: 100%;
+          padding: $dblgutter 0;
+          text-decoration: none;
+          font-weight: $fontLight;
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+
+  div.subDiv {
+    padding: 8px $gutter;
+    text-align: left;
+    p {
+      padding: 8px $gutter;
+      font-weight: $fontLight;
+      text-align: left;
+    }
+    a {
+      color: $primaryColor;
+      text-decoration: none;
+    }
+    figure {
+      padding: 8px $gutter;
+
+      img {
+        width: 100%;
+      }
+    }
+    ul.mainList {
+      list-style-type: disc;
+      padding: 30px;
+    }
+    ul.subList {
+      list-style-type: circle;
+      padding: 0 40px;
+    }
+    figure.enSmallen {
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+}
+footer {
+  hr {
+    display: none;
+  }
+  width: 100%;
+  border-top: 5px solid $secondaryColor;
+  p {
+    color: $fontColor;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
