@@ -1,0 +1,76 @@
+{
+  "tokens_buy": [
+    {
+      "uniqueID": "001",
+      "reward": "Stay up and watch KBC episode with Mom",
+      "type": "experience",
+      "tokenCost": 30,
+      "pic": "../images/tokenStorePics/kids-baking-championship.jpg",
+      "reserved": false,
+      "reserved_by": ""
+    },
+    {
+      "uniqueID": "002",
+      "reward": "Temporary tattoo",
+      "type": "experiene",
+      "tokenCost": 30,
+      "pic": "../images/tokenStorePics/temp-tats.png",
+      "reserved": false,
+      "reserved_by": ""
+    },
+    {
+      "uniqueID": "003",
+      "reward": "Small bat plushie",
+      "type": "item",
+      "tokenCost": 30,
+      "pic": "../images/item-pics/bat-sm.jpg",
+      "reserved": true,
+      "reserved_by": "Mom"
+    },
+    {
+      "uniqueID": "004",
+      "reward": "Medium bear plushie",
+      "type": "item",
+      "tokenCost": 30,
+      "pic": "../images/item-pics/bear-med.jpg",
+      "reserved": false,
+      "reserved_by": ""
+    },
+    {
+      "uniqueID": "005",
+      "reward": "Tiny bear plushie",
+      "type": "item",
+      "tokenCost": 30,
+      "pic": "../images/item-pics/bear-tiny.jpg",
+      "reserved": false,
+      "reserved_by": ""
+    },
+    {
+      "uniqueID": "006",
+      "reward": "Small bug plushie",
+      "type": "item",
+      "tokenCost": 30,
+      "pic": "../images/item-pics/bug-sm.jpg",
+      "reserved": false,
+      "reserved_by": ""
+    },
+    {
+      "uniqueID": "007",
+      "reward": "Large cat plushie",
+      "type": "item",
+      "tokenCost": 30,
+      "pic": "../images/item-pics/cat-lg.jpg",
+      "reserved": false,
+      "reserved_by": ""
+    },
+    {
+      "uniqueID": "008",
+      "reward": "Small cat Squashums plushie",
+      "type": "item",
+      "tokenCost": 30,
+      "pic": "../images/item-pics/cat-puff-sm.jpg",
+      "reserved": false,
+      "reserved_by": ""
+    }
+  ]
+}
