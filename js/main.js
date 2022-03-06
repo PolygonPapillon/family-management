@@ -1,30 +1,34 @@
 import { tokens_buy } from "./token_store.js.js";
 
-let mainArea = document.querySelector("main");
+let displayArea = document.getElementById("display");
+console.log(tokens_buy.reward);
 
-tokens_buy.forEach(function (tokens_buy) {
+tokens_buy.forEach(tokenItem => {
   let rewardDiv = document.createElement("div");
   let name = document.createElement("h1");
   let cost = document.createElement("h3");
   let reserve = document.createElement("p");
   let pic = document.createElement("img");
 
-  let ifReserved = isReserved(tokens_buy);
+  let ifReserved = isReserved(tokenItem);
   reserve.textContent = ifReserved;
 
-  name.textContent = tokens_buy.reward;
+  name.textContent = tokenItem.reward;
 
-  cost.textContent = tokens_buy.tokenCost + " tokens";
+  cost.textContent = tokenItem.tokenCost + " tokens";
 
-  pic.src = tokens_buy.pic;
+  pic.src = tokenItem.pic;
 
   rewardDiv.appendChild(pic);
   rewardDiv.appendChild(name);
   rewardDiv.appendChild(cost);
   rewardDiv.appendChild(reserve);
 
-  mainArea.appendChild(rewardDiv);
+  displayArea.appendChild(rewardDiv);
 });
+
+
+
 
 function isReserved(tokens) {
   let thing = tokens.reserved;

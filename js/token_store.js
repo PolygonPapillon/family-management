@@ -1,5 +1,6 @@
 export const tokens_buy = [
   {
+    uniqueID: "001",
     reward: "Stay up and watch KBC episode with Mom",
     type: "experience",
     tokenCost: "30",
@@ -8,6 +9,7 @@ export const tokens_buy = [
     reserved_by: "",
   },
   {
+    uniqueID: "002",
     reward: "Temporary tattoo",
     type: "experiene",
     tokenCost: "30",
@@ -16,6 +18,7 @@ export const tokens_buy = [
     reserved_by: "",
   },
   {
+    uniqueID: "003",
     reward: "Small bat plushie",
     type: "item",
     tokenCost: "30",
@@ -24,6 +27,7 @@ export const tokens_buy = [
     reserved_by: "",
   },
   {
+    uniqueID: "004",
     reward: "Medium bear plushie",
     type: "item",
     tokenCost: "30",
@@ -32,6 +36,7 @@ export const tokens_buy = [
     reserved_by: "",
   },
   {
+    uniqueID: "005",
     reward: "Tiny bear plushie",
     type: "item",
     tokenCost: "30",
@@ -40,6 +45,7 @@ export const tokens_buy = [
     reserved_by: "",
   },
   {
+    uniqueID: "006",
     reward: "Small bug plushie",
     type: "item",
     tokenCost: "30",
@@ -48,6 +54,7 @@ export const tokens_buy = [
     reserved_by: "",
   },
   {
+    uniqueID: "007",
     reward: "Large cat plushie",
     type: "item",
     tokenCost: "30",
@@ -56,6 +63,7 @@ export const tokens_buy = [
     reserved_by: "",
   },
   {
+    uniqueID: "008",
     reward: "Small cat Squashums plushie",
     type: "item",
     tokenCost: "30",
