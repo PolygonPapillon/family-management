@@ -24,16 +24,8 @@ header {
 //nav {} // end nav
 
 main {
-  section.theSections {
-    max-width: 75rem;
+  section#display div {
+    max-width: 250px;
   }
-  section.subSections {
-    justify-content: center;
-    figure {
-      width: 70%;
-    }
-    figure.enSmallen {
-      height: 60%;
-    }
-  }
+  
 } // end main

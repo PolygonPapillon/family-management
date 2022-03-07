@@ -1,5 +1,5 @@
 import {tokens_buy} from "./token_store.js";
-console.log(tokens_buy);
+//console.log(tokens_buy);
 
 let displayArea = document.getElementById("display");
 
@@ -37,6 +37,7 @@ tokens_buy.forEach(tokenItem => {
   let name = document.createElement("h2");
   let cost = document.createElement("h3");
   let reserve = document.createElement("p");
+  let fig = document.createElement("figure");
   let pic = document.createElement("img");
 
   let ifReserved = isReserved(tokenItem);
@@ -48,7 +49,8 @@ tokens_buy.forEach(tokenItem => {
 
   pic.src = tokenItem.pic;
 
-  rewardDiv.appendChild(pic);
+  fig.appendChild(pic);
+  rewardDiv.appendChild(fig);
   rewardDiv.appendChild(name);
   rewardDiv.appendChild(cost);
   rewardDiv.appendChild(reserve);

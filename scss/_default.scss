@@ -11,7 +11,7 @@ header {
   min-height: 150px;
   border-bottom: 5px solid $secondaryColor;
   h1 {
-    font-size: 3.3rem;
+    font-size: 3rem;
     text-align: center;
     padding-top: 55px;
     color: $fontColor;
@@ -25,7 +25,7 @@ header {
   }
 }
 nav {
-  p {
+  li {
     padding: 8px $gutter;
     color: $fontColor;
   }
@@ -45,70 +45,42 @@ main {
     font-size: 2rem;
     padding: $gutter;
   }
-  p {
-    text-align: center;
-    padding: 8px $gutter;
-  }
+
   border-bottom: none;
 
-  section.theSections {
+  section#display {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: $gutter;
-    div.area {
-      padding: $gutter;
-      text-align: center;
-      figure {
-        img {
-          width: 100%;
-          max-height: 140px;
-          max-width: 140px;
-        }
-        figcaption {
-          width: 100%;
-          padding: $dblgutter 0;
-          text-decoration: none;
-          font-weight: $fontLight;
-          color: $primaryColor;
-        }
-      }
-    }
-  }
+    align-items: center;
 
-  div.subDiv {
-    padding: 8px $gutter;
-    text-align: left;
-    p {
-      padding: 8px $gutter;
-      font-weight: $fontLight;
-      text-align: left;
+    div {
+      display: flex column;
+      justify-content: center;
+      margin: $gutter;
     }
-    a {
-      color: $primaryColor;
-      text-decoration: none;
+    h2 {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    h3 {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    p {
+      text-align: center;
     }
     figure {
-      padding: 8px $gutter;
-
-      img {
-        width: 100%;
-      }
+     display: flex;
     }
-    ul.mainList {
-      list-style-type: disc;
-      padding: 30px;
-    }
-    ul.subList {
-      list-style-type: circle;
-      padding: 0 40px;
-    }
-    figure.enSmallen {
-      margin: 0 auto;
-      width: 70%;
+    img {
+      margin: auto;
+      max-width: 100%;
     }
   }
 }
+
 footer {
   hr {
     display: none;

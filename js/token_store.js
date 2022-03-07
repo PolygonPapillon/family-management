@@ -1,7 +1,7 @@
 export const tokens_buy = [
   {
     uniqueID: "001",
-    reward: "Stay up and watch KBC episode with Mom",
+    reward: "Late night KBC episode with Mom",
     type: "experience",
     tokenCost: 30,
     pic: "../images/tokenStorePics/kids-baking-championship.jpg",
