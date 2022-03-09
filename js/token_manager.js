@@ -1,6 +1,6 @@
 function token_manager() {
     
-    token_store.json; //database object
+    token_store.js; //database object
     settings_manager; //token store specific settings object
 
     function display_toys() {

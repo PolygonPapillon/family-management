@@ -1,4 +1,4 @@
-import {tokens_buy} from "./token_store.js";
+import {tokens_buy} from "./JSobjects/token_store.js";
 //console.log(tokens_buy);
 
 let displayArea = document.getElementById("display");
@@ -39,6 +39,9 @@ tokens_buy.forEach(tokenItem => {
   let reserve = document.createElement("p");
   let fig = document.createElement("figure");
   let pic = document.createElement("img");
+  let link = document.createElement("a");
+
+  link.className = "toAlert";
 
   let ifReserved = isReserved(tokenItem);
   reserve.textContent = ifReserved;
@@ -50,10 +53,11 @@ tokens_buy.forEach(tokenItem => {
   pic.src = tokenItem.pic;
 
   fig.appendChild(pic);
-  rewardDiv.appendChild(fig);
-  rewardDiv.appendChild(name);
-  rewardDiv.appendChild(cost);
-  rewardDiv.appendChild(reserve);
+  link.appendChild(fig);
+  link.appendChild(name);
+  link.appendChild(cost);
+  link.appendChild(reserve);
+  rewardDiv.appendChild(link);
 
   displayArea.appendChild(rewardDiv);
 });
@@ -63,9 +67,9 @@ tokens_buy.forEach(tokenItem => {
 
 function isReserved(tokens) {
   let thing = tokens.reserved;
-  if (thing != false) {
+  if (thing == true) {
     return "Item reserved by " + tokens.reserved_by;
   } else {
-    return "not reserved";
+    return "Not reserved";
   }
 }
